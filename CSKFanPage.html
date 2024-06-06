@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/CSKFanPage.css">
+    </head>
+    <body>
+        <br><h1><center>CHENNAI SUPER KINGS</center></h1>
+        <marquee>Purchase CSK merchandise from our official website! || Don't forget to cheer for us on our upcoming matches || Purchase the tickets for upcoming matches from the official BCCI website</marquee>
+<div class="sec1">
+    <br>   
+        <div class=img1><img src="./images/logo.jpg"/></div>
+        <div class=content1><p>Chennai Super Kings (CSK) is an Indian professional cricket franchise based in Chennai, Tamil Nadu. The team competes in the Indian Premier League (IPL) and was one of the eight franchises incorporated when the league was established in 2008. The team plays its home matches at the M. A. Chidambaram Stadium in Chennai and is owned by Chennai Super Kings Cricket Limited.<br><br>Super Kings is the joint-most successful IPL franchise having won five IPL titles (shared with Mumbai Indians). In the IPL, they have appeared in a record 10 finals and qualified for the playoff stages 12 times out of the 14 seasons they have played, more than any other team. Super Kings have also won the Champions League Twenty20 twice in 2010 and 2014. The team is currently captained by Ruturaj Gaikwad and coached by Stephen Fleming.
+            <br><br><br>
+        <a href="https://www.chennaisuperkings.com/" alt="Error" target="_blank" style="color:white">Click here to visit the official CSK page</a>
+        <br><br><br><br><br><br><br><br><br> </div>
+    </div>
+    <div class="sec2">
+        <div class=img2>
+            <figure> 
+                <img src="./images/csk_players.jpeg" alt="Failed to Load" usemap="#csk" width="610" height="343">
+                <figcaption><b><center><br>Click the Player for more Information</center></b></figcaption>    
+            </figure>
+        </div>
+         <div class="content2"><h3><u>About the Key Players</u></h3>
+            <b>MS DHONI</b><p>Mahendra Singh Dhoni is an Indian professional cricketer. He is a right handed batter and a wicket-keeper.</p>
+            <b>RUTURAJ GAIKWAD</b><p>Ruturaj Dasharath Gaikwad is an Indian international cricketer who captains the Maharashtra cricket team in the T20, List A format and the current captain of Chennai Super Kings in the Indian Premier League.</p>
+            <b>JADEJA</b><p>Ravindrasinh Anirudhsinh Jadeja is an Indian international cricketer who represents the Indian national cricket team in all formats. He is an all-rounder, who bats left-handed and bowls left-arm orthodox spin</p>
+            <b>MOEEN ALI</b><p>Moeen Munir Ali OBE is an English cricketer who serves as vice-captain for England in limited overs cricket. He played Test cricket for England between 2014 and 2023</p></div>
+<br><br>            
+<map name="csk">
+  <area shape="circle" coords="353, 216,50" alt="Dhoni" href="https://www.chennaisuperkings.com/matchcentre/teamDetail/1" target="_blank">
+  <area shape="circle" coords="416,221,50" alt="Jadeja" href="https://www.chennaisuperkings.com/matchcentre/teamDetail/2" target="_blank">
+  <area shape="circle" coords="268,219,50" alt="Ruturaj Gaikwad" href="https://www.chennaisuperkings.com/matchcentre/teamDetail/4" target="_blank">
+  <area shape="circle" coords="212,228,50" alt="Moeen Ali" href="https://www.chennaisuperkings.com/matchcentre/teamDetail/3" target="_blank">
+</map>
+</div>
+<div class="sec3">
+    <div class="img3">
+   <img src="./images/dhoni.jpg" alt="Dhoni's Image" height="500" width="400"/> </div>
+   <div class="content3">
+</br><h1>Welcome to the Chennai Super Kings Fan Quiz!</h1>
+
+<p>Do you know everything about the Yellow Brigade? Test your knowledge with our quick CSK quiz and see if you're a true superfan! Let's dive in!</p><br>
+<form method="post">
+<div class="q1"><label>Question 1: What are the primary colors of the Chennai Super Kings team jersey?</label></div><br><br>
+<label><input type="radio" name="q1" id="y"/>Yellow</label><br>
+<label><input type="radio" name="q1" id="b"/>Blue</label><br>
+<label><input type="radio" name="q1" id="yb"/>Yellow and Blue</label><br><br>
+<label>Question 2: Who is the captain known as "Thala" by the Chennai Super Kings fans?</label><br><br>
+<label><input type="radio" name="q2" id="msd"/>Mahendra Singh Dhoni</label><br>
+<label><input type="radio" name="q2" id="rs"/>Rohit Sharma</label><br>
+<label><input type="radio" name="q2" id="sr"/>Suresh Raina</label><br><br>
+<label>Question 3: What is the name of the home ground where Chennai Super Kings play most of their home matches?</label><br><br>
+<label><input type="radio" name="q3" id="cs"/>Chepauk Stadium</label><br>
+<label><input type="radio" name="q3" id="macs"/>M.A Chidambaram Stadium</label><br>
+<label><input type="radio" name="q3" id="ab"/>Both (a) and (b)</label><br><br>
+<p id="result"></p>
+
+<input type="button" onclick="score()" value="SUBMIT"/><br><br><br>
+</form>
+<script>
+function score() 
+{
+ var y1 = document.getElementById("y").value
+ var b1 = document.getElementById("b").value
+ var yb1 = document.getElementById("yb").value
+ var msd2 = document.getElementById("msd").value
+ var rs2 = document.getElementById("rs").value
+ var sr2 = document.getElementById("sr").value
+ var cs3 = document.getElementById("cs").value
+ var macs3 = document.getElementById("macs").value
+ var ab3 = document.getElementById("ab").value
+ 
+count=0
+
+ if (yb.checked==true) 
+ {
+     count+=1
+ }
+ if (msd.checked==true) 
+ {
+     count+=1
+ }
+ if (ab.checked==true) 
+ {
+     count+=1
+ }
+ var resultText=""
+ if (count==3)
+ {
+    resultText="Congratulations! Your score is 3. You're a true CSK legend! Perfect score!"
+ }
+ if (count==2)
+ {
+    resultText="Almost there! Your score is 2. You're a top contender among CSK fans!"
+ }
+ if (count==1)
+ {
+    resultText="Nice effort! Your score is 1. Keep cheering for the Yellow Army!"
+ }
+ if (count==0)
+ {
+    resultText="Looks like you need to brush up on your CSK knowledge. Keep learning!"
+ }
+ document.getElementById('result').innerHTML=resultText
+}
+</script></div>
+</div>
+</body>
+</html>
